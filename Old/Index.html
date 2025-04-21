@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <h2>Reborn Randomizer</h2>
+      </div>
+    </nav>
+
+    <div class="main-wrapper">
+      <h1>Enter Player Names</h1>
+
+      <div class="input-group" id="playerInputGroup">
+        <textarea
+          id="nameList"
+          placeholder="Enter names separated by commas or new lines"
+        ></textarea>
+        <button onclick="generateBoxes()">Create Boxes</button>
+      </div>
+
+      <div id="gameArea" style="display: none">
+        <div class="scroll-wrapper" id="scrollWrapper">
+          <div class="container" id="mainContainer">
+            <div class="column" id="col1"></div>
+            <div class="column" id="col2"></div>
+            <div class="column team-column" id="teamsCol">
+              <h3>Teams</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button onclick="showRandomBoxes()">Create teams</button>
+          <button onclick="resetTeams()">Reset Teams</button>
+          <button onclick="exportTeams()">Export Teams</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

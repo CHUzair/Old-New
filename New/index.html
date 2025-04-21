@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reborn Randomizer</title>
+    <link rel="icon" type="image/png" href="fav.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <img src="Rev.png" alt="Logo" class="logo" />
+        <h2>Reborn Randomizer</h2>
+      </div>
+    </nav>
+    <div class="main-wrapper">
+      <div class="input-group" id="inputGroup">
+        <h3>Enter player names</h3>
+        <textarea
+          id="nameList"
+          placeholder="Enter one name per line..."
+        ></textarea
+        ><br />
+        <button onclick="generateBoxes()">Generate Boxes</button>
+      </div>
+
+      <div id="box-area" style="display: none">
+        <div class="scroll-wrapper">
+          <div class="container" id="boxContainer">
+            <div class="column">
+              <h3>Column 1</h3>
+              <div id="column1" class="column-content"></div>
+            </div>
+            <div class="column">
+              <h3>Column 2</h3>
+              <div id="column2" class="column-content"></div>
+            </div>
+            <div class="column team-column">
+              <h3>Teams</h3>
+              <div id="teamColumn" class="column-content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button onclick="showRandomBoxes()">Show Random Boxes</button>
+          <button onclick="exportTeams()">Export Teams</button>
+          <button onclick="resetTeams()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

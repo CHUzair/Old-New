@@ -1,0 +1,184 @@
+:root {
+  --bg-dark: #0d1117;
+  --card-dark: #161b22;
+  --highlight: #ff6600;
+  --text-light: #f0f0f0;
+  --border-color: #ff6600;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  background-color: var(--card-dark);
+  color: var(--text-light);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;     /* Align items vertically */
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;   /* Vertically center the logo and text */
+}
+.logo {
+  width: 40px;           /* Adjust the size of the logo */
+  height: auto;
+  margin-right: 10px;    /* Add space between logo and text */
+}
+
+.navbar-content h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.main-wrapper {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.input-group {
+  margin: 30px auto;
+}
+
+textarea#nameList {
+  width: 300px;
+  height: 120px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-color);
+  background-color: var(--card-dark);
+  color: var(--text-light);
+  resize: vertical;
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 10px 5px;
+  background-color: var(--highlight);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(22, 27, 34, 0.8); /* Slight transparency */
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 15px;
+  min-width: 200px;
+  max-height: 70vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.column h3 {
+  margin-bottom: 10px;
+  color: var(--highlight);
+}
+
+.column-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box {
+  background-color: var(--card-dark);
+  border: 2px solid var(--border-color);
+  color: var(--text-light);
+  padding: 10px 15px;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.small {
+  font-size: 14px;
+  padding: 8px;
+  min-width: 100px;
+}
+
+.xsmall {
+  font-size: 12px;
+  padding: 6px;
+  min-width: 90px;
+}
+
+.team-box {
+  background-color: #ff7700;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-dark);
+  padding: 10px 20px;
+  border: 1px solid var(--highlight);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  z-index: 999;
+  display: none; /* Initially hidden */
+}
+
+.scroll-wrapper {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 10px;
+  position: relative;
+}
+
+.scroll-enabled {
+  border-top: 1px solid var(--highlight);
+  border-bottom: 1px solid var(--highlight);
+}
+
+.team-column {
+  background-color: rgba(22, 27, 34, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 15px;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
